@@ -57,6 +57,8 @@ module.exports = {
     assetsSubDirectory: "static",
     assetsPublicPath: "/",
 
+    useEslint: false,
+
     /**
      * Source Maps
      */
