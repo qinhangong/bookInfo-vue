@@ -17,7 +17,9 @@ spinner.start();
 rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
   console.log("111111111-------------------------");
   if (err) throw err;
+  console.log("22222222-------------------------");
   webpack(webpackConfig, (err, stats) => {
+    console.log("33333333-------------------------");
     spinner.stop();
     if (err) throw err;
     process.stdout.write(
