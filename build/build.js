@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 require("./check-versions")();
 
 process.env.NODE_ENV = "production";
@@ -18,8 +18,6 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
   console.log("111111111-------------------------");
   if (err) throw err;
   webpack(webpackConfig, (err, stats) => {
-    console.log("222222222-------------------------");
-    console.log("stats-------------------------,stats");
     spinner.stop();
     if (err) throw err;
     process.stdout.write(
