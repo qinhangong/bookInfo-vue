@@ -11,7 +11,8 @@ module.exports = {
     assetsPublicPath: "/",
     proxyTable: {
       "/api": {
-        target: "https://www.yihanzhang.cn",
+        // target: "https://www.yihanzhang.cn",
+        target: "http://localhost:3003",
         secure: false,
         changeOrigin: true
       }
@@ -50,10 +51,10 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, "../dist/index.html"),
+    index: path.resolve(__dirname, "../public/index.html"),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, "../dist"),
+    assetsRoot: path.resolve(__dirname, "../public"),
     assetsSubDirectory: "static",
     assetsPublicPath: "/",
 

@@ -1,5 +1,8 @@
 <template>
   <div class="index-container">
+    <div class="ewm-area">
+      <img src="../assets/ewm.jpg" alt>
+    </div>
     <div class="form-area">
       <el-form
         :rules="rules"
@@ -126,11 +129,8 @@ export default {
           axios.post("/api/information/list", params).then(res => {
             const { code, data } = res.data;
             if (code === 1) {
-              this.$message({
-                message: "提交成功,下拉刷新小程序试试看",
-                type: "success"
-              });
               this.handleResetForm();
+              this.$router.push("/admin");
             } else {
               const { message } = res;
               this.handleError(message);
