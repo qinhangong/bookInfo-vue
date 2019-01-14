@@ -86,7 +86,7 @@ export default {
       });
     },
     handleBeforeRemove(file, fileList) {
-      return this.$confirm(`确定移除 ${file.title}？`);
+      return this.$confirm(`确定移除 ${file.name}？`);
     },
     handleChange(file, fileList) {
       if (file.status === "success") {
