@@ -11,10 +11,10 @@
         :model="bookInfoForm"
         :label-position="labelPosition"
       >
-        <el-form-item label="title1:" prop="title">
+        <el-form-item label="title:" prop="title">
           <el-input placeholder="请输入书名" v-model="bookInfoForm.title"></el-input>
         </el-form-item>
-        <el-form-item label="desc1:" prop="desc">
+        <el-form-item label="desc:" prop="desc">
           <el-input type="textarea" :rows="2" placeholder="请输入简介" v-model="bookInfoForm.desc"></el-input>
         </el-form-item>
         <el-form-item label="avatar:" prop="uploadFlag">
